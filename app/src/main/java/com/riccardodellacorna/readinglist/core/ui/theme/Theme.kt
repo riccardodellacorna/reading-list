@@ -1,6 +1,5 @@
-package com.riccardodellacorna.readinglist.ui.theme
+package com.riccardodellacorna.readinglist.core.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
