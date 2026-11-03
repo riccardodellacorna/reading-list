@@ -1,4 +1,4 @@
-package com.riccardodellacorna.readinglist.ui.theme
+package com.riccardodellacorna.readinglist.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -39,6 +39,7 @@ android {
 
     testOptions {
         unitTests.isReturnDefaultValues = true
+        unitTests.isIncludeAndroidResources = true
     }
     sourceSets {
         getByName("androidTest").assets.directories.add("$projectDir/schemas")
@@ -97,6 +98,8 @@ dependencies {
     testImplementation(platform(libs.koin.bom))
     testImplementation(libs.koin.test)
     testImplementation(libs.koin.test.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.core.ktx)
 
     // Test strumentati
     androidTestImplementation(libs.room.testing)
