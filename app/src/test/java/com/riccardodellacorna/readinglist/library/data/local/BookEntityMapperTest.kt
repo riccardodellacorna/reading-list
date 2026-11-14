@@ -30,4 +30,11 @@ class BookEntityMapperTest {
     fun `new books default to TO_READ`() {
         assertThat(book.toEntity(addedAt = 1L).status).isEqualTo(ReadingStatus.TO_READ)
     }
+
+    @Test
+    fun `rating is mapped to the domain model`() {
+        val entity = book.toEntity(addedAt = 1L).copy(rating = 4)
+
+        assertThat(entity.toDomain().rating).isEqualTo(4)
+    }
 }

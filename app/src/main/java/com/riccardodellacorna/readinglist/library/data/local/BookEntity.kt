@@ -12,5 +12,6 @@ data class BookEntity(
     val firstPublishYear: Int?,
     val coverUrl: String?,
     val status: ReadingStatus,
-    val addedAt: Long
+    val addedAt: Long,
+    val rating: Int? = null
 )

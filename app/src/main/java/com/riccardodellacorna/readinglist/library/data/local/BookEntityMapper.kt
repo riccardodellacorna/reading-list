@@ -13,7 +13,8 @@ fun BookEntity.toDomain(): SavedBook = SavedBook(
         coverUrl = coverUrl
     ),
     status = status,
-    addedAt = addedAt
+    addedAt = addedAt,
+    rating = rating,
 )
 
 fun Book.toEntity(
