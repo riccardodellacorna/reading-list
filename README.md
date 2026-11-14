@@ -1,4 +1,5 @@
 # Reading List
+![CI](https://github.com/riccardodellacorna/reading-list/actions/workflows/ci.yml/badge.svg)
 
 An Android app to search books, save them to a local library and track
 their reading status (to read / reading / read).
@@ -8,7 +9,9 @@ with a strong focus on **automated testing** and **dependency injection**.
 
 ## Features
 
-- Search books through the [Open Library API](https://openlibrary.org/developers/api)
+- Search books through the [Open Library API](https://openlibrary.org/developers/api)git add .
+  git commit -m "ci: run unit tests on every push and pull request"
+  git push -u origin ci
 - Save books to a local library (offline-first)
 - Track reading status
 - Book detail screen
